@@ -1,0 +1,229 @@
+{
+  "users": [
+    {
+      "name": "Super Admin",
+      "email": "superadmin@campus.edu",
+      "password": "SuperAdmin123",
+      "role": "admin",
+      "isActive": true,
+      "accountStatus": "active",
+      "canteenKey": null,
+      "phone": "",
+      "department": "",
+      "studyYear": null,
+      "semester": null
+    },
+    {
+      "name": "1st Canteen Admin",
+      "email": "canteen1@campus.edu",
+      "password": "CanteenAdmin1",
+      "role": "admin",
+      "isActive": true,
+      "accountStatus": "active",
+      "canteenKey": "canteen1",
+      "phone": "",
+      "department": "",
+      "studyYear": null,
+      "semester": null
+    },
+    {
+      "name": "2nd Canteen Admin",
+      "email": "canteen2@campus.edu",
+      "password": "CanteenAdmin2",
+      "role": "admin",
+      "isActive": true,
+      "accountStatus": "active",
+      "canteenKey": "canteen2",
+      "phone": "",
+      "department": "",
+      "studyYear": null,
+      "semester": null
+    },
+    {
+      "name": "3rd Canteen Admin",
+      "email": "canteen3@campus.edu",
+      "password": "CanteenAdmin3",
+      "role": "admin",
+      "isActive": true,
+      "accountStatus": "active",
+      "canteenKey": "canteen3",
+      "phone": "",
+      "department": "",
+      "studyYear": null,
+      "semester": null
+    },
+    {
+      "name": "4th Canteen Admin",
+      "email": "canteen4@campus.edu",
+      "password": "CanteenAdmin4",
+      "role": "admin",
+      "isActive": true,
+      "accountStatus": "active",
+      "canteenKey": "canteen4",
+      "phone": "",
+      "department": "",
+      "studyYear": null,
+      "semester": null
+    },
+    {
+      "name": "Vendor User",
+      "email": "vendor@campus.edu",
+      "password": "password123",
+      "role": "vendor",
+      "isActive": true,
+      "accountStatus": "active",
+      "phone": "",
+      "department": "",
+      "studyYear": null,
+      "semester": null
+    },
+    {
+      "name": "Student One",
+      "email": "student1@campus.edu",
+      "password": "password123",
+      "role": "student",
+      "isActive": true,
+      "accountStatus": "active",
+      "phone": "0770000001",
+      "department": "Computer Science",
+      "studyYear": 2,
+      "semester": 1
+    },
+    {
+      "name": "Student Two",
+      "email": "student2@campus.edu",
+      "password": "password123",
+      "role": "student",
+      "isActive": true,
+      "accountStatus": "active",
+      "phone": "0770000002",
+      "department": "Mechanical Engineering",
+      "studyYear": 2,
+      "semester": 1
+    }
+  ],
+  "foodCategories": [
+    {
+      "name": "Breakfast",
+      "isActive": true
+    },
+    {
+      "name": "Lunch",
+      "isActive": true
+    },
+    {
+      "name": "Snacks",
+      "isActive": true
+    },
+    {
+      "name": "Beverages",
+      "isActive": true
+    }
+  ],
+  "foodItems": [
+    {
+      "name": "Veg Sandwich",
+      "description": "Fresh sandwich with vegetables",
+      "price": 40,
+      "canteen": "1st Canteen",
+      "isAvailable": true,
+      "averageRating": 4.2,
+      "totalReviews": 5,
+      "imageUrl": ""
+    },
+    {
+      "name": "Idli Sambar",
+      "description": "South Indian breakfast combo",
+      "price": 35,
+      "canteen": "2nd Canteen",
+      "isAvailable": true,
+      "averageRating": 4.5,
+      "totalReviews": 8,
+      "imageUrl": ""
+    },
+    {
+      "name": "Thali Meal",
+      "description": "Daily lunch thali",
+      "price": 90,
+      "canteen": "3rd Canteen",
+      "isAvailable": true,
+      "averageRating": 4.0,
+      "totalReviews": 3,
+      "imageUrl": ""
+    },
+    {
+      "name": "Cold Coffee",
+      "description": "Chilled coffee drink",
+      "price": 60,
+      "canteen": "4th Canteen",
+      "isAvailable": true,
+      "averageRating": 4.7,
+      "totalReviews": 10,
+      "imageUrl": ""
+    }
+  ],
+  "wallets": [
+    {
+      "balance": 5000,
+      "rewardPoints": 20
+    },
+    {
+      "balance": 5000,
+      "rewardPoints": 8
+    }
+  ],
+  "walletTransactions": [
+    {
+      "type": "topup",
+      "amount": 5000,
+      "description": "Initial top up",
+      "referenceType": "manual"
+    },
+    {
+      "type": "topup",
+      "amount": 5000,
+      "description": "Initial top up",
+      "referenceType": "manual"
+    }
+  ],
+  "complaints": [
+    {
+      "title": "Late order delivery",
+      "description": "My order was delayed by 40 minutes.",
+      "category": "order",
+      "status": "open"
+    },
+    {
+      "title": "Wallet deduction issue",
+      "description": "Amount was deducted twice.",
+      "category": "wallet",
+      "status": "in_progress",
+      "adminNote": "Investigation started."
+    }
+  ],
+  "foodSharePosts": [
+    {
+      "title": "Extra Veg Biryani",
+      "description": "Freshly packed, can share 1 box.",
+      "shareType": "free_food",
+      "imageUrl": "",
+      "pickupLocation": "Hostel Block A Lobby",
+      "totalPortions": 1,
+      "maxMembers": 1,
+      "expiryTime": "2026-06-27T23:59:59.000Z",
+      "status": "available"
+    },
+    {
+      "title": "Extra Juice Box",
+      "description": "Unopened juice.",
+      "shareType": "shared_cost",
+      "imageUrl": "",
+      "pickupLocation": "Library Entrance",
+      "totalPortions": 1,
+      "maxMembers": 1,
+      "expiryTime": "2026-06-27T23:59:59.000Z",
+      "status": "resolved"
+    }
+  ],
+  "studyGroups": []
+}

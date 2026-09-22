@@ -1,0 +1,40 @@
+{
+  "name": "canteen-management-backend",
+  "version": "1.0.0",
+  "description": "Backend foundation for Canteen Management MERN project",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "free-port": "node scripts/freePort.js",
+    "start": "node scripts/freePort.js && node server.js",
+    "dev": "node scripts/freePort.js && nodemon server.js",
+    "seed": "node scripts/seedData.js",
+    "create-super-admin": "node scripts/createSuperAdmin.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^11.2.0",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

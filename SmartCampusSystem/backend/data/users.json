@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Local Test",
+    "email": "local1782561368746@example.com",
+    "password": "$2b$10$JvKN0lRHFwC5E0Ph2wg3Begp0vVOZjk23YXSKirWPBRjF.LE9J1V.",
+    "_id": "423e5dd2-d23c-4af7-84b0-5acf3051b280",
+    "role": "student",
+    "isActive": true,
+    "accountStatus": "active",
+    "statusReason": "",
+    "suspendedUntil": null,
+    "phone": "",
+    "department": "",
+    "studyYear": null,
+    "semester": null,
+    "canteenKey": null,
+    "monthlyFoodBudget": null,
+    "resetPasswordToken": null,
+    "resetPasswordExpires": null,
+    "createdAt": "2026-06-27T11:56:19.021Z",
+    "updatedAt": "2026-06-27T11:56:19.053Z"
+  }
+]
