@@ -52,6 +52,22 @@ app.get("/", (req, res) => {
 // Serve uploaded study materials
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+// Connect to MongoDB on demand (needed on Vercel, where server.js is not run)
+const mongoose = require("mongoose");
+const connectDB = require("./config/db");
+let dbPromise = null;
+app.use(async (req, res, next) => {
+  if (mongoose.connection.readyState === 1) return next();
+  try {
+    dbPromise = dbPromise || connectDB();
+    await dbPromise;
+    next();
+  } catch (err) {
+    dbPromise = null;
+    next(err);
+  }
+});
+
 // API routes
 app.use("/api", apiRoutes);
 
